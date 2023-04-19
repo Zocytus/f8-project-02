@@ -36,7 +36,15 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-
+.line-camp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-camp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.break-all {
+  word-break: break-all;
+}
 /* Header */
 .header {
   background-color: #fffcf4;
@@ -229,4 +237,129 @@ a {
   font-size: 4.4rem;
   line-height: 123%;
   color: #171100;
+}
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.info .heading {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 126%;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+.info .desc {
+  margin-top: 16px;
+  max-width: 458px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 167%;
+  color: #5f5b53;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular .controls {
+  display: flex;
+  gap: 18px;
+}
+.popular-top .controls-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ffb900;
+  color: #ffb900;
+  background: transparent;
+}
+.popular-top .controls-btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #ffb900;
+}
+.popular .course-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+.popular .course-item {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e2dfda;
+  border-radius: 12px;
+}
+.popular .course-item:hover {
+  border-color: transparent;
+  box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+.popular .course-item .thumb {
+  text-decoration: none;
+  width: calc(100% + 2px);
+  margin: -1px;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .rating,
+.popular .course-item .foot,
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .course-item .title {
+  padding-right: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 167%;
+  color: #171100;
+}
+.popular .rating .value {
+  margin-left: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+  color: #fea31b;
+}
+.popular .course-item .desc {
+  font-family: "Poppins";
+  margin-top: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 186%;
+  color: #5f5b53;
+}
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+.popular .course-item .price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 167%;
+  color: #171100;
+}
+.popular .course-item .book-btn {
+  border: none;
+}
+.popular .course-item .book-btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #fea31b;
 }
