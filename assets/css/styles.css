@@ -8,6 +8,7 @@ body {
   font-size: 1.6rem;
   font-family: "Sen", sans-serif;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 /* Common */
 a {
@@ -48,8 +49,6 @@ a {
 /* Header */
 .header {
   background-color: #fffcf4;
-}
-.header .fixed {
   position: sticky;
   top: -28px;
   z-index: 1;
